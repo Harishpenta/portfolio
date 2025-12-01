@@ -1,0 +1,876 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mobile Application Developer Portfolio - Showcasing innovative mobile apps and creative projects">
+    <meta name="keywords" content="mobile developer, app developer, iOS, Android, Flutter, React Native, portfolio">
+    <meta name="author" content="Hariprasad Penta">
+    <title>Hariprasad Penta | Senior Mobile Engineer</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📱</text></svg>">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <!-- Cursor Effect -->
+    <div class="cursor"></div>
+    <div class="cursor-follower"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-icon">📱</span>
+                <span class="logo-text">Penta Digital<span class="accent">.</span></span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#home" class="nav-link active">Home</a></li>
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="container hero-container">
+            <div class="hero-content" data-scroll-animate>
+                <div class="hero-label">
+                    <span class="wave">👋</span>
+                    <span>Welcome to my portfolio</span>
+                </div>
+                <h1 class="hero-title">
+                    Hi, I'm <span class="gradient-text typing-text"></span>
+                    <span class="cursor-blink">|</span>
+                </h1>
+                <p class="hero-subtitle">
+                    I craft exceptional mobile experiences that blend innovation with intuitive design.
+                    With 8+ years of experience building high-performance Android & cross-platform applications.
+                </p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get In Touch</span>
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="50">0</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="100">0</span>
+                        <span class="stat-label">Happy Clients</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-count="8">0</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-visual" data-scroll-animate data-delay="200">
+                <div class="phone-mockup">
+                    <div class="phone-frame">
+                        <div class="phone-notch"></div>
+                        <div class="phone-screen">
+                            <div class="app-demo">
+                                <div class="demo-header">
+                                    <div class="demo-time">9:41</div>
+                                    <div class="demo-icons">
+                                        <i class="fas fa-signal"></i>
+                                        <i class="fas fa-wifi"></i>
+                                        <i class="fas fa-battery-three-quarters"></i>
+                                    </div>
+                                </div>
+                                <div class="demo-content">
+                                    <div class="demo-card"></div>
+                                    <div class="demo-card"></div>
+                                    <div class="demo-card"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="phone-shadow"></div>
+                </div>
+                <div class="floating-icons">
+                    <i class="fab fa-apple icon-float" style="--delay: 0s;"></i>
+                    <i class="fab fa-android icon-float" style="--delay: 1s;"></i>
+                    <i class="fab fa-react icon-float" style="--delay: 2s;"></i>
+                    <i class="fas fa-code icon-float" style="--delay: 3s;"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header" data-scroll-animate>
+                <span class="section-tag">Get to know me</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image" data-scroll-animate>
+                    <div class="image-wrapper">
+                        <img src="assets/images/profile.jpg" alt="Hariprasad Penta - Senior Mobile Engineer" style="width: 100%; height: 100%; object-fit: cover; border-radius: 30px;">
+                        <div class="image-decoration"></div>
+                    </div>
+                </div>
+                
+                <div class="about-text" data-scroll-animate data-delay="200">
+                    <h3>Passionate Mobile Developer & Creative Problem Solver</h3>
+                    <p>
+                        With over 8 years of experience in mobile app development, I specialize in creating 
+                        high-performance, user-centric applications for Android and cross-platform solutions. My journey 
+                        in tech has been driven by a passion for innovation and a commitment to delivering 
+                        exceptional user experiences.
+                    </p>
+                    <p>
+                        I've worked with startups and established companies, building robust mobile applications 
+                        that solve real-world problems. From conceptualization to deployment, I handle every 
+                        aspect of mobile development with precision, creativity, and a focus on clean architecture.
+                    </p>
+                    
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Cross-platform Development Expert</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Clean Code & Best Practices</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Agile & Scrum Methodologies</span>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>UI/UX Design Principles</span>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hire Me</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-scroll-animate>
+                <span class="section-tag">My expertise</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+            </div>
+            
+            <div class="skills-grid">
+                <!-- Mobile Development -->
+                <div class="skill-category" data-scroll-animate>
+                    <div class="category-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Mobile Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Flutter</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">React Native</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kotlin / Android</span>
+                                <span class="skill-level">95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Java / Android</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Backend & Database -->
+                <div class="skill-category" data-scroll-animate data-delay="100">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend & Database</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Node.js</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Firebase</span>
+                                <span class="skill-level">92%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">PostgreSQL</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">REST API</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Tools & Others -->
+                <div class="skill-category" data-scroll-animate data-delay="200">
+                    <div class="category-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Tools & Others</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git & GitHub</span>
+                                <span class="skill-level">90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Figma / UI Design</span>
+                                <span class="skill-level">85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CI/CD</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Agile / Scrum</span>
+                                <span class="skill-level">88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack" data-scroll-animate>
+                <h3>Technologies I Work With</h3>
+                <div class="tech-icons">
+                    <div class="tech-icon"><i class="fab fa-apple"></i><span>iOS</span></div>
+                    <div class="tech-icon"><i class="fab fa-android"></i><span>Android</span></div>
+                    <div class="tech-icon"><i class="fab fa-react"></i><span>React Native</span></div>
+                    <div class="tech-icon"><i class="fas fa-wind"></i><span>Flutter</span></div>
+                    <div class="tech-icon"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+                    <div class="tech-icon"><i class="fas fa-fire"></i><span>Firebase</span></div>
+                    <div class="tech-icon"><i class="fab fa-figma"></i><span>Figma</span></div>
+                    <div class="tech-icon"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-scroll-animate>
+                <span class="section-tag">My work</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+            </div>
+            
+            <!-- Project Filters -->
+            <div class="project-filters" data-scroll-animate>
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="ios">iOS</button>
+                <button class="filter-btn" data-filter="android">Android</button>
+                <button class="filter-btn" data-filter="cross-platform">Cross-Platform</button>
+            </div>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 1 - AllCalc Pro -->
+                <div class="project-card" data-category="android" data-scroll-animate>
+                    <div class="project-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 2rem; display: flex; align-items: center; justify-content: center;">
+                        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; max-width: 100%;">
+                            <div style="background: white; border-radius: 8px; padding: 0.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                                <div style="font-size: 0.7rem; font-weight: bold; color: #333; margin-bottom: 0.3rem;">📐 Geometry</div>
+                                <div style="background: #FFA500; height: 60px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.5rem;">⭕</div>
+                            </div>
+                            <div style="background: white; border-radius: 8px; padding: 0.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                                <div style="font-size: 0.7rem; font-weight: bold; color: #333; margin-bottom: 0.3rem;">💰 Finance</div>
+                                <div style="background: #4CAF50; height: 60px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem;">SIP/EMI</div>
+                            </div>
+                            <div style="background: white; border-radius: 8px; padding: 0.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                                <div style="font-size: 0.7rem; font-weight: bold; color: #333; margin-bottom: 0.3rem;">🏥 Health</div>
+                                <div style="background: #FF6B9D; height: 60px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1rem;">BMI</div>
+                            </div>
+                            <div style="background: white; border-radius: 8px; padding: 0.5rem; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+                                <div style="font-size: 0.7rem; font-weight: bold; color: #333; margin-bottom: 0.3rem;">🔢 Calculator</div>
+                                <div style="background: #2196F3; height: 60px; border-radius: 4px; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">±×÷</div>
+                            </div>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#allcalc-details" class="project-link" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="https://github.com/Harishpenta/" class="project-link" title="GitHub" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Android Native</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">Material Design</span>
+                        </div>
+                        <h3 class="project-title">AllCalc Pro - Calculator Suite</h3>
+                        <p class="project-description">
+                            All-in-one calculator app with 50+ specialized calculators including Scientific Calculator, 
+                            Geometry (2D/3D shapes), Financial calculators (SIP, EMI, Loans), Health metrics (BMI, Age), 
+                            Unit & Currency converters. Built with Material Design 3 for intuitive user experience.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-calculator"></i>
+                                <span>50+ Calculators</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Material Design 3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 - E-Commerce Platform -->
+                <div class="project-card" data-category="android" data-scroll-animate data-delay="100">
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                            <i class="fas fa-shopping-bag"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="https://github.com/Harishpenta/" class="project-link" title="GitHub" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Android</span>
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">MVVM</span>
+                        </div>
+                        <h3 class="project-title">E-Commerce Mobile Platform</h3>
+                        <p class="project-description">
+                            Feature-rich e-commerce application with product catalog, cart management, 
+                            payment gateway integration, order tracking, and user authentication.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-code"></i>
+                                <span>Clean Architecture</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>10K+ Users</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="android" data-scroll-animate data-delay="200">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="Play Store">
+                                    <i class="fab fa-google-play"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Kotlin</span>
+                            <span class="tag">WebRTC</span>
+                        </div>
+                        <h3 class="project-title">Real-Time Chat Application</h3>
+                        <p class="project-description">
+                            Secure messaging app with end-to-end encryption, video calls, 
+                            and rich media sharing capabilities.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>200K+ Downloads</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.7 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 - Productivity App -->
+                <div class="project-card" data-category="cross-platform" data-scroll-animate>
+                    <div class="project-image">
+                        <div class="image-placeholder" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                            <i class="fas fa-tasks"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="https://github.com/Harishpenta/" class="project-link" title="GitHub" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">BLoC</span>
+                        </div>
+                        <h3 class="project-title">Task Management & Productivity</h3>
+                        <p class="project-description">
+                            Cross-platform task manager with project organization, team collaboration, 
+                            deadline tracking, and real-time synchronization across devices.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-sync"></i>
+                                <span>Real-time Sync</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-users"></i>
+                                <span>Team Features</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="ios" data-scroll-animate data-delay="100">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="App Store">
+                                    <i class="fab fa-app-store-ios"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Swift</span>
+                            <span class="tag">CoreData</span>
+                        </div>
+                        <h3 class="project-title">Personal Finance Manager</h3>
+                        <p class="project-description">
+                            Smart budgeting app with expense tracking, financial insights, 
+                            and automated savings recommendations.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>30K+ Downloads</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.8 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card" data-category="cross-platform" data-scroll-animate data-delay="200">
+                    <div class="project-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-music"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="View Details">
+                                    <i class="fas fa-eye"></i>
+                                </a>
+                                <a href="#" class="project-link" title="GitHub">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span class="tag">Flutter</span>
+                            <span class="tag">Audio API</span>
+                        </div>
+                        <h3 class="project-title">Music Streaming Platform</h3>
+                        <p class="project-description">
+                            Feature-rich music player with offline mode, personalized playlists, 
+                            and social sharing capabilities.
+                        </p>
+                        <div class="project-stats">
+                            <div class="stat">
+                                <i class="fas fa-download"></i>
+                                <span>120K+ Downloads</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-star"></i>
+                                <span>4.9 Rating</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header" data-scroll-animate>
+                <span class="section-tag">Client feedback</span>
+                <h2 class="section-title">What Clients <span class="gradient-text">Say</span></h2>
+            </div>
+            
+            <div class="testimonials-slider" data-scroll-animate>
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Outstanding work! The app exceeded our expectations in both functionality and design. 
+                        Professional, responsive, and delivered on time."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>John Doe</h4>
+                            <span>CEO, TechStart Inc.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "Incredible attention to detail and user experience. The app has significantly improved 
+                        our customer engagement and retention rates."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Sarah Smith</h4>
+                            <span>Product Manager, Innovate Labs</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">
+                        "A true professional who understands both technical excellence and business needs. 
+                        Highly recommend for any mobile development project!"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Michael Chen</h4>
+                            <span>Founder, AppVentures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-scroll-animate>
+                <span class="section-tag">Get in touch</span>
+                <h2 class="section-title">Let's Work <span class="gradient-text">Together</span></h2>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info" data-scroll-animate>
+                    <h3>Let's discuss your project</h3>
+                    <p>
+                        Have an exciting project in mind? I'm always open to discussing new opportunities 
+                        and creative ideas. Let's bring your vision to life!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <a href="mailto:harishpenta918@gmail.com">harishpenta918@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Phone</h4>
+                                <a href="tel:+918460329539">+91 8460329539</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Location</h4>
+                                <span>Surat, Gujarat, India</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/Harishpenta/" class="social-link" title="GitHub" target="_blank">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/harishpenta/" class="social-link" title="LinkedIn" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:harishpenta918@gmail.com" class="social-link" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <a href="https://play.google.com/store/apps/developer?id=Hariprasad+Penta" class="social-link" title="Play Store" target="_blank">
+                            <i class="fab fa-google-play"></i>
+                        </a>
+                        <a href="tel:+918460329539" class="social-link" title="Phone">
+                            <i class="fas fa-phone"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" data-scroll-animate data-delay="200">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <span>Send Message</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">📱</span>
+                        <span class="logo-text">Penta Digital<span class="accent">.</span></span>
+                    </a>
+                    <p>Creating exceptional mobile experiences, one app at a time.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#">iOS Development</a></li>
+                        <li><a href="#">Android Development</a></li>
+                        <li><a href="#">Cross-Platform</a></li>
+                        <li><a href="#">UI/UX Design</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Penta Digital. All rights reserved. | <a href="privacy-policy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a></p>
+                <p>Made with <i class="fas fa-heart"></i> and lots of ☕</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
